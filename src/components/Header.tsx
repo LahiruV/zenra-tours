@@ -75,7 +75,7 @@ export const Header = () => {
 
         <div className="hidden md:flex items-center space-x-4">
           <LanguageSelector />
-          <Link
+          {/* <Link
             to="/login"
             className={`${isScrolled
                 ? isActive('/login') ? 'text-primary font-medium' : 'text-gray-600'
@@ -83,7 +83,7 @@ export const Header = () => {
               } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.login')}
-          </Link>
+          </Link> */}
         </div>
 
         <button
@@ -114,7 +114,7 @@ export const Header = () => {
           >
             {t('nav.destinations')}
           </Link>
-          <Link
+          {/* <Link
             to="/packages"
             className={`block ${isScrolled
                 ? isActive('/packages') ? 'text-primary font-medium' : 'text-gray-600'
@@ -122,7 +122,7 @@ export const Header = () => {
               } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.packages')}
-          </Link>
+          </Link> */}
           <Link
             to="/about"
             className={`block ${isScrolled
@@ -141,7 +141,7 @@ export const Header = () => {
           >
             {t('nav.contact')}
           </Link>
-          <Link
+          {/* <Link
             to="/login"
             className={`block ${isScrolled
                 ? isActive('/login') ? 'text-primary font-medium' : 'text-gray-600'
@@ -149,7 +149,7 @@ export const Header = () => {
               } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.login')}
-          </Link>
+          </Link> */}
           <div>
             <LanguageSelector />
           </div>

@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
+import i18n from 'i18next';
 import { Button } from '@zenra/widgets';
-import { MapPinIcon } from '@heroicons/react/24/outline';
+import { MapPinIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { LocationMapModal } from './LocationMapModal';
@@ -74,14 +75,27 @@ export const DestinationCard = ({ id, image }: DestinationCardProps) => {
         </div>
         
         <div className="pt-6 border-t border-gray-200">
-          <Button
-            variant="primary"
-            fullWidth
-            startIcon={<MapPinIcon className="h-5 w-5" />}
-            onClick={() => setIsMapOpen(true)}
-          >
-            {t('destinations.viewLocation')}
-          </Button>
+          <div className="grid grid-cols-2 gap-4">
+            <Button
+              variant="primary"
+              fullWidth
+              startIcon={<MapPinIcon className="h-5 w-5" />}
+              onClick={() => setIsMapOpen(true)}
+            >
+              {t('destinations.viewLocation')} 
+            </Button>
+            <Button
+              variant="outline"
+              fullWidth
+              startIcon={<BuildingOfficeIcon className="h-5 w-5" />}
+              onClick={() => window.open(
+                `https://www.booking.com/${i18n.language}/searchresults.html?ss=${encodeURIComponent(t(`destinations.locations.${id}.name`))}+Sri+Lanka`,
+                '_blank'
+              )}
+            >
+              {t('destinations.nearbyHotels')}
+            </Button>
+          </div>
         </div>
       </div>
       <LocationMapModal

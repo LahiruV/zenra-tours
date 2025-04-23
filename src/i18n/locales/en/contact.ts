@@ -23,23 +23,23 @@ export const contact = {
     },
     phone: {
       label: 'Phone',
-      local: 'Local: +94 11 234 5678',
-      international: 'International: +1 (555) 123-4567'
+      local: 'Local: +94 778923789',
+      international: 'International: +94 778923789'
     },
     email: {
       label: 'Email',
-      bookings: 'Bookings: bookings@zenratravels.com',
-      support: 'Support: support@zenratravels.com'
+      bookings: 'Bookings: lahiruvimukthi292@gmail.com',
+      support: 'Support: lahiruvimukthi292@gmail.com'
     },
     hours: {
       label: 'Business Hours',
-      weekdays: 'Monday - Friday: 9:00 AM - 6:00 PM',
-      saturday: 'Saturday: 10:00 AM - 4:00 PM',
-      sunday: 'Sunday: Closed'
+      weekdays: 'Monday - Friday: 24/7',
+      saturday: 'Saturday: 24/7',
+      sunday: 'Sunday: 24/7'
     },
     languages: {
       label: 'Languages',
-      value: 'English, Sinhala, Tamil, French, German'
+      value: 'English, French, German, Russian, Chinese, Japanese, Spanish, Hindi'
     }
   },
   features: {
