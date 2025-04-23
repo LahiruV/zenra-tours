@@ -10,7 +10,7 @@ export const CallToAction = () => {
 
   const handleExplore = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    navigate('/packages');
+    navigate('/destinations');
   }, [navigate]);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export const CallToAction = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      viewport={{ once: true }}      
+      viewport={{ once: true }}
     >
       <video
         id="cta-video"

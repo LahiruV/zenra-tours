@@ -16,7 +16,7 @@ export const Hero = () => {
   }, []);
 
   const handleExploreClick = () => {
-    navigate('/packages');
+    navigate('/destinations');
   };
 
   return (
