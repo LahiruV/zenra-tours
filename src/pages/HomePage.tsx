@@ -7,7 +7,7 @@ export const HomePage = () => {
     <PageTransition>
       <Hero />
       <FeaturedDestinations />
-      <PopularPackages />
+      {/* <PopularPackages /> */}
       <ImageGallery />
       <Experiences />
       <CustomerExperience />

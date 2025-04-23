@@ -2,7 +2,7 @@ export const home = {
   hero: {
     title: 'Discover Sri Lanka',
     subtitle: 'Experience the pearl of the Indian Ocean - where ancient wonders meet tropical paradise',
-    exploreButton: 'Explore Our Packages'
+    exploreButton: 'Explore Destinations'
   },
   experiences: {
     title: 'Unforgettable Experiences',

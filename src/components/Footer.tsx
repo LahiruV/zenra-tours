@@ -15,19 +15,18 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks.title')}</h4>
             <ul className="space-y-2">
-              <li><a href="#destinations" className="text-gray-400 hover:text-white">{t('footer.quickLinks.destinations')}</a></li>
-              <li><a href="#packages" className="text-gray-400 hover:text-white">{t('footer.quickLinks.packages')}</a></li>
-              <li><a href="#about" className="text-gray-400 hover:text-white">{t('footer.quickLinks.about')}</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white">{t('footer.quickLinks.contact')}</a></li>
+              <li><a href="/destinations" className="text-gray-400 hover:text-white">{t('footer.quickLinks.destinations')}</a></li>
+              {/* <li><a href="#packages" className="text-gray-400 hover:text-white">{t('footer.quickLinks.packages')}</a></li> */}
+              <li><a href="/about" className="text-gray-400 hover:text-white">{t('footer.quickLinks.about')}</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white">{t('footer.quickLinks.contact')}</a></li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">{t('footer.popularDestinations.title')}</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">{t('footer.popularDestinations.paris')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">{t('footer.popularDestinations.tokyo')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">{t('footer.popularDestinations.newYork')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">{t('footer.popularDestinations.rome')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">{t('footer.popularDestinations.colombo')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">{t('footer.popularDestinations.kandy')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">{t('footer.popularDestinations.galle')}</a></li>
             </ul>
           </div>
           <div>

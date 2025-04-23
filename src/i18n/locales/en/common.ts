@@ -23,16 +23,15 @@ export const common = {
     },
     popularDestinations: {
       title: 'Popular Destinations',
-      paris: 'Paris, France',
-      tokyo: 'Tokyo, Japan',
-      newYork: 'New York, USA',
-      rome: 'Rome, Italy'
+      colombo: 'Colombo, Sri Lanka',
+      kandy: 'Kandy, Sri Lanka',
+      galle: 'Galle, Sri Lanka',
     },
     contact: {
       title: 'Contact Info',
-      email: 'Email: info@travelworld.com',
-      phone: 'Phone: +1 (555) 123-4567',
-      address: 'Address: 123 Travel Street'
+      email: 'Email: lahiruvimukthi292@gmail.com',
+      phone: 'Phone: +94 77 892 3789',
+      address: 'Address: Colombo, Sri Lanka'
     },
     rights: 'All rights reserved.'
   }

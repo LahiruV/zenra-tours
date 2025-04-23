@@ -24,9 +24,8 @@ export const Header = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-    }`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div>
           <Link to="/" className={`text-2xl font-bold ${isScrolled ? 'text-primary' : 'text-white'}`}>
@@ -37,15 +36,14 @@ export const Header = () => {
         <div className="hidden md:flex space-x-8">
           <Link
             to="/destinations"
-            className={`${
-              isScrolled 
-                ? isActive('/destinations') ? 'text-primary font-medium' : 'text-gray-600' 
+            className={`${isScrolled
+                ? isActive('/destinations') ? 'text-primary font-medium' : 'text-gray-600'
                 : isActive('/destinations') ? 'text-white font-medium' : 'text-white/80'
-            } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
+              } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.destinations')}
           </Link>
-          <Link
+          {/* <Link
             to="/packages"
             className={`${
               isScrolled 
@@ -54,24 +52,22 @@ export const Header = () => {
             } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.packages')}
-          </Link>
+          </Link> */}
           <Link
             to="/about"
-            className={`${
-              isScrolled 
-                ? isActive('/about') ? 'text-primary font-medium' : 'text-gray-600' 
+            className={`${isScrolled
+                ? isActive('/about') ? 'text-primary font-medium' : 'text-gray-600'
                 : isActive('/about') ? 'text-white font-medium' : 'text-white/80'
-            } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
+              } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.about')}
           </Link>
           <Link
             to="/contact"
-            className={`${
-              isScrolled 
-                ? isActive('/contact') ? 'text-primary font-medium' : 'text-gray-600' 
+            className={`${isScrolled
+                ? isActive('/contact') ? 'text-primary font-medium' : 'text-gray-600'
                 : isActive('/contact') ? 'text-white font-medium' : 'text-white/80'
-            } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
+              } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.contact')}
           </Link>
@@ -81,11 +77,10 @@ export const Header = () => {
           <LanguageSelector />
           <Link
             to="/login"
-            className={`${
-              isScrolled 
-                ? isActive('/login') ? 'text-primary font-medium' : 'text-gray-600' 
+            className={`${isScrolled
+                ? isActive('/login') ? 'text-primary font-medium' : 'text-gray-600'
                 : isActive('/login') ? 'text-white font-medium' : 'text-white/80'
-            } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
+              } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.login')}
           </Link>
@@ -106,58 +101,52 @@ export const Header = () => {
       </nav>
 
       <div
-        className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} ${
-          isScrolled ? 'bg-white shadow-lg' : 'bg-black/90 backdrop-blur-sm'
-        }`}
+        className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} ${isScrolled ? 'bg-white shadow-lg' : 'bg-black/90 backdrop-blur-sm'
+          }`}
       >
         <div className="px-4 pt-4 pb-4 space-y-2">
           <Link
             to="/destinations"
-            className={`block ${
-              isScrolled 
-                ? isActive('/destinations') ? 'text-primary font-medium' : 'text-gray-600' 
+            className={`block ${isScrolled
+                ? isActive('/destinations') ? 'text-primary font-medium' : 'text-gray-600'
                 : isActive('/destinations') ? 'text-white font-medium' : 'text-white/80'
-            } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
+              } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.destinations')}
           </Link>
           <Link
             to="/packages"
-            className={`block ${
-              isScrolled 
-                ? isActive('/packages') ? 'text-primary font-medium' : 'text-gray-600' 
+            className={`block ${isScrolled
+                ? isActive('/packages') ? 'text-primary font-medium' : 'text-gray-600'
                 : isActive('/packages') ? 'text-white font-medium' : 'text-white/80'
-            } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
+              } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.packages')}
           </Link>
           <Link
             to="/about"
-            className={`block ${
-              isScrolled 
-                ? isActive('/about') ? 'text-primary font-medium' : 'text-gray-600' 
+            className={`block ${isScrolled
+                ? isActive('/about') ? 'text-primary font-medium' : 'text-gray-600'
                 : isActive('/about') ? 'text-white font-medium' : 'text-white/80'
-            } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
+              } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.about')}
           </Link>
           <Link
             to="/contact"
-            className={`block ${
-              isScrolled 
-                ? isActive('/contact') ? 'text-primary font-medium' : 'text-gray-600' 
+            className={`block ${isScrolled
+                ? isActive('/contact') ? 'text-primary font-medium' : 'text-gray-600'
                 : isActive('/contact') ? 'text-white font-medium' : 'text-white/80'
-            } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
+              } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.contact')}
           </Link>
           <Link
             to="/login"
-            className={`block ${
-              isScrolled 
-                ? isActive('/login') ? 'text-primary font-medium' : 'text-gray-600' 
+            className={`block ${isScrolled
+                ? isActive('/login') ? 'text-primary font-medium' : 'text-gray-600'
                 : isActive('/login') ? 'text-white font-medium' : 'text-white/80'
-            } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
+              } hover:${isScrolled ? 'text-primary' : 'text-white'} transition-colors`}
           >
             {t('nav.login')}
           </Link>

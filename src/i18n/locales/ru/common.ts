@@ -23,16 +23,15 @@ export const common = {
     },
     popularDestinations: {
       title: 'Популярные направления',
-      paris: 'Париж, Франция',
-      tokyo: 'Токио, Япония',
-      newYork: 'Нью-Йорк, США',
-      rome: 'Рим, Италия'
+      colombo: 'Коломбо, Шри-Ланка',
+      kandy: 'Канди, Шри-Ланка',
+      galle: 'Галле, Шри-Ланка',
     },
     contact: {
       title: 'Контактная информация',
-      email: 'Email: info@travelworld.com',
-      phone: 'Телефон: +1 (555) 123-4567',
-      address: 'Адрес: 123 Travel Street'
+      email: 'Email: lahiruvimukthi292@gmail.com',
+      phone: 'Телефон: +94 77 892 3789',
+      address: 'Адрес: Коломбо, Шри-Ланка'
     },
     rights: 'Все права защищены.'
   }
