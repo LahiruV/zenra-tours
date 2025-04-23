@@ -5,7 +5,7 @@ import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 const leader = [
   {
     key: 'ceo',
-    image: '../../../public/images/ceo.jpg',
+    image: '/images/ceo.jpg',
     social: {
       phone: '+94 77 892 3789',
       whatsapp: '+94778923789',
