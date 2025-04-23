@@ -3,7 +3,8 @@ export const destinations = {
   subtitle: '从古城到原始海滩，探索这个热带天堂的多样目的地',
   searchPlaceholder: '搜索目的地...',
   viewLocation: '查看位置',
-  nearbyHotels: '附近酒店',
+  viewHotels: '附近酒店',
+  getDirections: '获取路线',
   sections: {
     highlights: '亮点',
     activities: '活动'

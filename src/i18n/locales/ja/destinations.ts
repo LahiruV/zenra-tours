@@ -3,7 +3,8 @@ export const destinations = {
   subtitle: '古代都市から手つかずのビーチまで、この熱帯の楽園の多様な目的地を探検',
   searchPlaceholder: '目的地を検索...',
   viewLocation: '場所を表示',
-  nearbyHotels: '近くのホテル',
+  viewHotels: '近くのホテル',
+  getDirections: '道順を表示',
   sections: {
     highlights: 'ハイライト',
     activities: 'アクティビティ'

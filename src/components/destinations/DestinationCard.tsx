@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
-import i18n from 'i18next';
 import { Button } from '@zenra/widgets';
-import { MapPinIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline';
+import { MapPinIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { LocationMapModal } from './LocationMapModal';
+import i18n from '../../i18n';
 
 interface DestinationCardProps {
   id: string;
@@ -75,25 +75,25 @@ export const DestinationCard = ({ id, image }: DestinationCardProps) => {
         </div>
         
         <div className="pt-6 border-t border-gray-200">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="flex gap-2 flex-wrap">
             <Button
               variant="primary"
-              fullWidth
+              className="flex-1 min-w-[120px]"
               startIcon={<MapPinIcon className="h-5 w-5" />}
               onClick={() => setIsMapOpen(true)}
             >
-              {t('destinations.viewLocation')} 
+              {t('destinations.viewLocation')}
             </Button>
             <Button
               variant="outline"
-              fullWidth
-              startIcon={<BuildingOfficeIcon className="h-5 w-5" />}
-              onClick={() => window.open(
-                `https://www.booking.com/${i18n.language}/searchresults.html?ss=${encodeURIComponent(t(`destinations.locations.${id}.name`))}+Sri+Lanka`,
-                '_blank'
-              )}
+              className="flex-1 min-w-[120px]"
+              startIcon={<BuildingOffice2Icon className="h-5 w-5" />}
+              onClick={() => {
+                const lang = i18n.language;
+                window.open(`https://www.booking.com/searchresults.${lang === 'en' ? 'en-gb' : lang}.html?ss=${t(`destinations.locations.${id}.name`, { lng: 'en' })}%2C+Sri+Lanka`, '_blank');
+              }}
             >
-              {t('destinations.nearbyHotels')}
+              {t('destinations.viewHotels')}
             </Button>
           </div>
         </div>

@@ -3,7 +3,8 @@ export const destinations = {
   subtitle: 'प्राचीन शहरों से लेकर अछूते समुद्र तटों तक, इस उष्णकटिबंधीय स्वर्ग के विविध गंतव्यों की खोज करें',
   searchPlaceholder: 'गंतव्य खोजें...',
   viewLocation: 'स्थान देखें',
-  nearbyHotels: 'नजदीकी होटल',
+  viewHotels: 'आस-पास के होटल',
+  getDirections: 'दिशा-निर्देश प्राप्त करें',
   sections: {
     highlights: 'विशेषताएं',
     activities: 'गतिविधियां'

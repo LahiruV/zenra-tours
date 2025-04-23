@@ -1,5 +1,7 @@
 import { Modal } from '@zenra/widgets';
 import { useTranslation } from 'react-i18next';
+import { Button } from '@zenra/widgets';
+import { MapIcon } from '@heroicons/react/24/outline';
 
 interface LocationMapModalProps {
   open: boolean;
@@ -38,6 +40,18 @@ export const LocationMapModal = ({ open, onClose, locationId }: LocationMapModal
           <span className="font-semibold">{t('map.distance')}:</span>{' '}
           {t(`map.locations.${locationId}.distance`)}
         </p>
+        <div className="mt-6">
+          <Button
+            variant="primary"
+            fullWidth
+            startIcon={<MapIcon className="h-5 w-5" />}
+            onClick={() => {
+              window.open(`https://www.google.com/maps/dir/Current+Location/${t(`destinations.locations.${locationId}.name`, { lng: 'en' })}+Sri+Lanka`, '_blank');
+            }}
+          >
+            {t('destinations.getDirections')}
+          </Button>
+        </div>
       </div>
     </Modal>
   );

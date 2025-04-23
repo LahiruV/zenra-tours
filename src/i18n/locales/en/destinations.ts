@@ -3,7 +3,8 @@ export const destinations = {
   subtitle: 'From ancient cities to pristine beaches, explore the diverse destinations of this tropical paradise',
   searchPlaceholder: 'Search Destinations...',
   viewLocation: 'View Location',
-  nearbyHotels: 'Nearby Hotels',
+  viewHotels: 'Nearby Hotels',
+  getDirections: 'Get Directions',
   sections: {
     highlights: 'Highlights',
     activities: 'Activities'
