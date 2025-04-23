@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
 import 'swiper/css';
 
 const destinations = [
@@ -34,6 +35,11 @@ const destinations = [
 
 export const FeaturedDestinations = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const handleDestinationClick = (id: string) => {
+    navigate('/destinations', { state: { selectedDestination: id } });
+  };
 
   return (
     <section className="py-16 bg-white overflow-hidden">
@@ -72,6 +78,8 @@ export const FeaturedDestinations = () => {
                 className="rounded-lg overflow-hidden shadow-lg"
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.3 }}
+                onClick={() => handleDestinationClick(destination.id)}
+                style={{ cursor: 'pointer' }}
               >
                 <img
                   src={destination.image}

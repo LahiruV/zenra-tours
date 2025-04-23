@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { PageTransition } from '../components/PageTransition';
 import { DestinationHero, DestinationGrid } from '@zenra/components';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 
 const destinationIds = [
   {
@@ -78,6 +79,17 @@ const destinationIds = [
 export const DestinationsPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const { t } = useTranslation();
+  const location = useLocation();
+
+  useEffect(() => {
+    const selectedDestination = location.state?.selectedDestination;
+    if (selectedDestination) {
+      const element = document.getElementById(selectedDestination);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location.state]);
 
   const filteredDestinations = destinationIds.filter(destination =>
     t(`destinations.locations.${destination.id}.name`).toLowerCase().includes(searchQuery.toLowerCase()) ||

@@ -16,22 +16,24 @@ export const Modal = ({ open, onClose, title, children }: ModalProps) => {
       maxWidth="md"
       fullWidth
     >
-      <div className="relative">
-        <IconButton
-          onClick={onClose}
-          className="absolute right-2 top-2"
-          size="small"
-        >
-          <XMarkIcon className="h-5 w-5" />
-        </IconButton>
+      <div className="relative p-6 flex flex-col">
+        <div className="flex justify-end">
+          <IconButton
+            onClick={onClose}
+            size="small"
+            className="hover:bg-gray-100 transition-colors"
+          >
+            <XMarkIcon className="h-5 w-5 text-primary hover:text-primary/80 transition-colors" />
+          </IconButton>
+        </div>
         
         {title && (
-          <DialogTitle className="pr-10">
+          <DialogTitle className="p-0 text-2xl font-bold text-gray-900 mb-4">
             {title}
           </DialogTitle>
         )}
         
-        <DialogContent>
+        <DialogContent className="p-0">
           {children}
         </DialogContent>
       </div>

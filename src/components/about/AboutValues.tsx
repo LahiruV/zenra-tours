@@ -26,7 +26,7 @@ export const AboutValues = () => {
 
   return (
     <div className="mb-16">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">{t('about.values.title')}</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">{t('about.services.title')}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {values.map((value, index) => (
           <motion.div
@@ -38,10 +38,10 @@ export const AboutValues = () => {
           >
             <value.icon className="h-12 w-12 text-primary mb-4" />
             <h3 className="text-xl font-semibold text-text mb-2">
-              {t(`about.values.items.${value.key}.title`)}
+              {t(`about.services.items.${value.key}.title`)}
             </h3>
             <p className="text-text/60">
-              {t(`about.values.items.${value.key}.description`)}
+              {t(`about.services.items.${value.key}.description`)}
             </p>
           </motion.div>
         ))}

@@ -1,7 +1,7 @@
 export const home = {
   hero: {
     title: 'Discover Sri Lanka',
-    subtitle: 'Experience the pearl of the Indian Ocean - where ancient wonders meet tropical paradise',
+    subtitle: 'Experience the pearl of the Indian Ocean - where ancient wonders meet tropical paradise. Discover pristine beaches, lush rainforests, misty mountains, and centuries-old temples in this enchanted island of endless adventures',
     exploreButton: 'Explore Destinations'
   },
   experiences: {

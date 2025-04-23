@@ -1,8 +1,8 @@
 export const common = {
-  backToHome: 'На главную',
+  backToHome: 'Вернуться на главную',
   nav: {
     destinations: 'Направления',
-    packages: 'Пакеты',
+    packages: 'Туры',
     about: 'О нас',
     contact: 'Контакты',
     login: 'Войти',
@@ -17,7 +17,7 @@ export const common = {
     quickLinks: {
       title: 'Быстрые ссылки',
       destinations: 'Направления',
-      packages: 'Туристические пакеты',
+      packages: 'Туры',
       about: 'О нас',
       contact: 'Контакты'
     },
